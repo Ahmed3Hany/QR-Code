@@ -14,9 +14,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: contain;
-    background-size: 130%;
+    background-size: 130% 100%;
 
-    animation:move 10s infinite;
+    animation:move 10s ease-in-out infinite ;
 }
 
 @keyframes move{
@@ -67,6 +67,10 @@ body{
     height: 3rem;
     font-size: 1rem;
     border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.6s ease-in-out;
 }
 
 .main .input input{
@@ -83,6 +87,9 @@ body{
     border: 2px solid white;
     overflow:hidden; */
     border-radius: 30px;
+}
 
-
+.main .input button:hover{
+    background-color: white;
+    color: black;
 }
